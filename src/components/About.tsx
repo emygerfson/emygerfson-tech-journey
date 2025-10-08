@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Code2, Lightbulb, Rocket, Target } from "lucide-react";
+import profilePhoto from "@/assets/emygerfson-photo.png";
 
 const About = () => {
   const timeline = [
@@ -64,6 +65,21 @@ const About = () => {
         <div className="mb-20 animate-fade-in-up">
           <Card className="glass-effect border-primary/20">
             <CardContent className="p-8 md:p-12">
+              <div className="flex flex-col md:flex-row gap-8 items-center mb-8">
+                <img
+                  src={profilePhoto}
+                  alt="Emygerfson Pontes da Silva"
+                  className="w-32 h-32 rounded-full object-cover border-4 border-primary/30 shadow-card flex-shrink-0"
+                />
+                <div className="flex-1">
+                  <h3 className="text-2xl font-bold mb-2 gradient-text">
+                    Emygerfson Pontes da Silva
+                  </h3>
+                  <p className="text-muted-foreground">
+                    Desenvolvedor Front-End | 43 anos | Apaixonado por Tecnologia
+                  </p>
+                </div>
+              </div>
               <p className="text-lg leading-relaxed mb-6">
                 Aos 43 anos, tomei uma decisão que mudou minha vida: migrar para a área de tecnologia. 
                 Não foi uma escolha fácil, mas foi a mais gratificante. Cada linha de código que escrevo 

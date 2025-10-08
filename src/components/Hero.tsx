@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, ArrowRight } from "lucide-react";
+import profilePhoto from "@/assets/emygerfson-photo.png";
 
 const Hero = () => {
   return (
@@ -16,6 +17,18 @@ const Hero = () => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center space-y-8 animate-fade-in-up">
+          {/* Profile Photo */}
+          <div className="flex justify-center mb-8">
+            <div className="relative">
+              <div className="absolute inset-0 gradient-primary rounded-full blur-2xl opacity-50 animate-pulse" />
+              <img
+                src={profilePhoto}
+                alt="Emygerfson Pontes da Silva"
+                className="relative w-40 h-40 md:w-48 md:h-48 rounded-full object-cover border-4 border-primary/30 shadow-glow animate-scale-in"
+              />
+            </div>
+          </div>
+
           <div className="space-y-4">
             <p className="text-secondary text-lg font-medium">Olá, eu sou o</p>
             <h1 className="text-5xl md:text-7xl font-bold">
